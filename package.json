@@ -1,0 +1,28 @@
+{
+  "name": "blokojs",
+  "version": "1.0.0",
+  "description": "Blockly interface for mbed C++ programming",
+  "main": "bloko.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pcordemans/blokojs.git"
+  },
+  "keywords": [
+    "blockly",
+    "C++",
+    "mbed"
+  ],
+  "author": "Piet Cordemans, Nico De Witte, Sille Van Landschoot",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/pcordemans/blokojs/issues"
+  },
+  "homepage": "https://github.com/pcordemans/blokojs#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  }
+}
