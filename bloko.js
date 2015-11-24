@@ -15,11 +15,11 @@ app.get('/', function (req, res) {
 });
 
 app.get('/about', function (req, res) {
-  res.render('About page');
+  res.render('about');
 });
 
 app.get('/help', function (req, res) {
-  res.render('help page');
+  res.render('help');
 });
 
 var server = app.listen(3000, function () {

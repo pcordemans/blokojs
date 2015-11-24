@@ -4,10 +4,23 @@
 <head>
     <link rel="stylesheet" href="/static/css/blokojs.css" media="screen" charset="utf-8">
     <meta charset="utf-8">
-    <title>Example App</title>
+    <title>Blokojs</title>
 </head>
 <body>
-    <h1>Title</h1>
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li class="menu-text">Blokojs</li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/help">Help</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </div>
+  </div>
     <div class="container">
       {{{body}}}
     </div>
