@@ -1,17 +1,25 @@
 
 var express = require('express');
 var app = express();
+var exphbs  = require('express-handlebars');
+
+// handlebars setup and configuration
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
+
+app.use('/static', express.static('public'));
+
 
 app.get('/', function (req, res) {
-  res.send('Hello World!');
+  res.render('home');
 });
 
 app.get('/about', function (req, res) {
-  res.send('About page');
+  res.render('About page');
 });
 
 app.get('/help', function (req, res) {
-  res.send('help page');
+  res.render('help page');
 });
 
 var server = app.listen(3000, function () {

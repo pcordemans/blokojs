@@ -23,10 +23,16 @@
   "homepage": "https://github.com/pcordemans/blokojs#readme",
   "devDependencies": {
     "chai": "^3.4.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^1.1.0",
     "mocha": "^2.3.4",
     "supertest": "^1.1.0"
   },
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "foundation-sites": "^6.0.3"
   }
 }
