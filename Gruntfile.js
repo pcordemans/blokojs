@@ -40,6 +40,15 @@ module.exports = function(grunt) {
       }
     },
 
+    mochaTest: {
+      test: {
+        options: {
+          reporter: 'spec'
+        },
+        src: ['test/**/*.js']
+      }
+    },
+
     watch: {
       grunt: {
         options: {
@@ -59,8 +68,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-mocha-test');
 
-
-  grunt.registerTask('build', ['sass', 'concat', 'jshint']);
+  grunt.registerTask('test', ['mochaTest']);
+  grunt.registerTask('build', ['sass', 'concat', 'jshint', 'mochaTest']);
   grunt.registerTask('default', ['build','watch']);
 };
