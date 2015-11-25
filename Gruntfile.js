@@ -25,6 +25,7 @@ module.exports = function(grunt) {
         src: [
           "node_modules/jquery/dist/jquery.min.js",
           "node_modules/foundation/js/foundation.min.js",
+          "src/js/blokojs.js"
         ],
         dest: 'public/js/blokojs.js',
       },
