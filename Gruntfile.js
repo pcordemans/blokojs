@@ -30,6 +30,14 @@ module.exports = function(grunt) {
       },
     },
 
+    jshint:{
+      files: ['Gruntfile.js', 'bloko.js', 'src/**/*.js', 'test/**/*.js'],
+      options: {
+        globals: {
+          jQuery: true
+        }
+      }
+    },
 
     watch: {
       grunt: {
@@ -49,8 +57,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
 
 
-  grunt.registerTask('build', ['sass', 'concat']);
+  grunt.registerTask('build', ['sass', 'concat', 'jshint']);
   grunt.registerTask('default', ['build','watch']);
-}
+};
