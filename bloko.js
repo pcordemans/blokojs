@@ -14,6 +14,10 @@ app.get('/', function (req, res) {
   res.render('home');
 });
 
+app.get('/editor', function (req, res) {
+  res.render('editor');
+});
+
 app.get('/about', function (req, res) {
   res.render('about');
 });

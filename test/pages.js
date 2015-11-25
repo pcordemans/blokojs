@@ -19,6 +19,12 @@ describe('basic pages', function(){
       .expect(200, done);
   });
 
+  it('get the editor page at /editor', function(done){
+    request(server)
+      .get('/editor')
+      .expect(200, done);
+  });
+
   it('get the about page at /about', function(done){
     request(server)
       .get('/about')
